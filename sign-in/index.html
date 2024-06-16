@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <style>
+
+#orsigninwith{
+    margin-left:28%;
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    margin-bottom: 8%;
+}
+#notamember {
+    background-color: rgb(233, 251, 253);
+    text-align: center;
+}
+  </style>
+</head>
+<body>
+
+    <div class="container ">
+        <div class="row">
+        <div class="col-md-6">
+            <h2 class="text-center ">SIGN IN</h2>
+            <form action="#">
+                <div class="form-floating mb-3 mt-3">
+                    <textarea class="form-control" name="text" id="emailorusername" placeholder="Email Or Username"></textarea>
+                </div>
+                <div class="form-floating mb-3 mt-3">
+                    <textarea class="form-control" name="pwd" id="password" placeholder="Password"></textarea>
+                </div>
+                <label class="form-check-label my-4">
+                    <input class="form-check-input" type="checkbox" name="stay">
+                    Stay signed in
+                </label>
+                <div id="forgotpassword">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <br>
+                    <div>
+                        <button type="button"  class="container btn btn-primary">
+        SIGN IN
+                        </button>
+                    </div>
+                    <div class=" my-5" id="orsigninwith">
+        <p>____________ Or Sign In with ____________</p>
+                    </div>
+              <div id="icons" class="container">
+        <a href="#"><img id="icons" src="google-logo.png" alt="google-logo"></a>
+        <a href="#"><img id="icons" src="facebook-new.png" alt="facebook-ne"></a>
+        <a href="#"><img id="icons" src="twitter--v1.png" alt="twitter--v"></a>
+        <a href="#"><img id="icons" src="linkedin.png" alt="linkedin"></a>
+              </div>
+              <div id="notamember" class="pt-2 pb-1 mt-3">
+        <p>Not a member?<a href="#">Sign Up</a></p>
+              </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="poster_b76fc19e-3ae5-469b-9fcd-b8ca0a9b6d7e.jpeg" alt="rocket" height="50%">
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>
